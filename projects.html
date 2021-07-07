@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Nathaniel Fernandes" />
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/741384050387714162/859822362760314920/unknown.png" />
+    <meta property="og:description" content="Studying Computer Science at Ryerson University" />
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#6e90f7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link id="baseStyle" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css"> -->
+    <link id="baseStyle" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div id="navBar" class="navBar">
+            <a class="navItem" id="closeBtn" onclick="navToggle()" href="javascript:void(0)"><i
+                    class="fas fa-times"></i></a>
+            <a class="navItem" href="/">About</a>
+            <a class="navItem" href="/projects.html">Projects</a>
+            <!-- <a class="navItem" href="/interests.html">Interests</a> -->
+            <a class="navItem" href="https://github.com/nathanielfernandes" target="blank">Github</a>
+            <a class="navItem" href="https://www.linkedin.com/in/nathaniel-fernandes-8a6774163/"
+                target="blank">LinkedIn</a>
+            <a class="navItem" onclick="setRandomColor('--bg')"><i class="fas fa-tint"></i></a>
+        </div>
+        <button id="navToggle" onclick="navToggle()"><i class="fas fa-bars"></i></button>
+        <div class="top">
+            <h1>Projects</h1>
+            <h4>my code contains no bugs, just unplanned features</h4>
+        </div>
+        <div class="cards">
+            <div class="card" data-tilt data-tilt-scale="1.04" data-tilt-glare="true" data-tilt-max-glare="0.1"
+                data-tilt-max="5">
+                <div class="card-title">Hamood | Discord Bot
+                    <span class="card-subtitle">Python, MongoDB, AWS, JSON, HTML/CSS, Too many APIs</span>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Hamood is a versatile <a>Discord</a> bot written in python that provides a variety of functions
+                        within discord servers. I intially created Hamood as an inside joke between friends, but it
+                        quickly grew to be one of my largest projects, and my first real introduction to computer
+                        science. My bot mainly provides entertainment by allowing users to custom
+                        generate their own memes and fetch reddit posts, however it also helps students with their
+                        chemistry, math, and computer science homework. <br><br>Hamood currently is in over <b>430</b>
+                        (and
+                        growing) discord servers and in view of around <b>90,000</b> users.
+                    </p>
+                    <div class="card-media">
+                        <img class="media-slide" style="width: 165rem"
+                            src="https://cdn.discordapp.com/attachments/741384050387714162/859491586206597150/hamood2.gif">
+
+                    </div>
+                </div>
+                <div class="link-btns">
+                    <a class="reg-btn" href="https://hamood.app" target="blank">invite</a>
+                    <a class="reg-btn" href="https://hamood.app" target="blank">website</a>
+                    <a class="github" href="https://github.com/nathanielfernandes/HamoodBot" target="blank"><i
+                            class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+            <div class="card" data-tilt data-tilt-scale="1.04" data-tilt-glare="true" data-tilt-max-glare="0.1"
+                data-tilt-max="5">
+                <div class="card-title">
+                    Ephemeral Chat | WebSocket Chat App
+                    <span class="card-subtitle">JavaScript, Python, HTML/CSS, JSON, tailwindcss</span>
+                </div>
+                <div class="card-body">
+                    <p>
+                        A WebSocket chat app that allows users to create temporary profiles and group chats that are
+                        deleted when left.
+                        <br><br>
+                        This project was an outlet to learn more about web development and websockets, and I had a lot
+                        of fun working on it. The idea was to create a chat app similar to discord that functions like
+                        omegle.
+
+                        The front end was made with tailwindcss and jinja templating, while the backend server is
+                        written in python using FastApi. The client side JavaScript establishes the websocket connection
+                        and handles the data being sent and recieved from and to the user.
+
+
+                    </p>
+                    <div class="card-media">
+                        <img class="media-slide" style="width: 165rem"
+                            src="https://cdn.discordapp.com/attachments/792686378366009354/862165933978943488/unknown.png">
+                    </div>
+                </div>
+                <div class="link-btns">
+                    <a class="github" href="https://github.com/nathanielfernandes/Ephemeral-Chat" target="blank"><i
+                            class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+            <div class="card" data-tilt data-tilt-scale="1.04" data-tilt-glare="true" data-tilt-max-glare="0.1"
+                data-tilt-max="5">
+                <div class="card-title">
+                    DiscordSubHub | Web API
+                    <span class="card-subtitle">Python, MongoDB, Heroku, JSON, HTML/CSS</span>
+                </div>
+                <div class="card-body">
+                    <p>
+                        DiscordSubHub is a <b>Feed API</b> that subscribes <b>Discord Webhooks</b> to <b>Youtube
+                            Channel</b>
+                        updates. It works by subscribing itself to the youtube channel, through <b>Google's Pubsubhubbub
+                            API</b>, it then keeps tracks of the subscribed channels and their according discord
+                        webhooks to send out channel updates directly to discord. <br><br> I created DiscordSubHub for
+                        my
+                        bot
+                        <b>Hamood</b> to use, allowing users to subscribe to youtube channels directly from the bot.
+                        Anyone can use it through the API or directly from the site.
+                    </p>
+                    <div class="card-media">
+                        <img class="media-slide" style="width: 90rem"
+                            src="https://cdn.discordapp.com/attachments/741384050387714162/859571492081238026/unknown.png">
+                    </div>
+                </div>
+                <div class="link-btns">
+                    <a class="reg-btn" href="https://discordsubhub.herokuapp.com/" target="blank">website</a>
+                    <a class="github" href="https://github.com/nathanielfernandes/DiscordSubHub" target="blank"><i
+                            class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+            <div class="card" data-tilt data-tilt-scale="1.04" data-tilt-glare="true" data-tilt-max-glare="0.1"
+                data-tilt-max="5">
+                <div class="card-title">
+                    PIL-Stacks | Python Module
+                    <span class="card-subtitle">Python, JSON</span>
+                </div>
+                <div class="card-body">
+                    <p>
+                        PIL-Stacks is a python based image template module that simplifies the process of editing images
+                        with varying external media or text. It is essentially a wrapper for the <a
+                            href="https://pypi.org/project/Pillow/" target="blank">Pillow Python Imaging Library</a> and
+                        handles
+                        everything to do with the image generation process, leaving only custimization up to the user.
+                        <br><br>
+                        The module also features a gui editor built with <a href="https://pypi.org/project/pygame/"
+                            target="blank">Pygame</a> that lets you quickly create
+                        templates
+                        as well as use previews to see how they would look.
+                        <br><br>
+                        I currently use this module to power the image generation of my discord bot.
+                    </p>
+
+                </div>
+                <div class="link-btns">
+                    <a class="github" href="https://github.com/nathanielfernandes/PIL-Stacks" target="blank"><i
+                            class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+            <div class="card" data-tilt data-tilt-scale="1.04" data-tilt-glare="true" data-tilt-max-glare="0.1"
+                data-tilt-max="5">
+                <div class="card-title">discomoji.js | JavaScript Library
+                    <span class="card-subtitle">JavaScript</span>
+                </div>
+                <div class="card-body">
+                    <p discomoji discomoji-hoverinfo="true">
+                        Discomoji.js is a tiny library that allows the use of <b>Custom Discord Emojis</b> such as
+                        [a:speen:847583231850446858] or [a:blobDance:846930212251107330]
+                        on a site.
+                        It works by finding discord emojis tags (ex. <b>a:speen:847583231850446858</b>) and
+                        replacing them with their emoji image, inline and
+                        sized with the text. <br><br>
+                        I created discord.js while creating this site so that I could use discord emojis on it.
+                    </p>
+                </div>
+                <div class="link-btns">
+                    <a class="github" href="https://github.com/nathanielfernandes/discomoji.js" target="blank"><i
+                            class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+            <footer>The rest of my projects can be found on my <a
+                    href="https://github.com/nathanielfernandes/">github</a></footer>
+            <!-- <div class="card" data-tilt data-tilt-scale="1.04" data-tilt-glare="true" data-tilt-max-glare="0.1"
+                data-tilt-max="5">
+                <span class="card-title">Work in Progress</span>
+                <div class="card-body">
+                    <h2 style="margin: 0 0">Leave Me Alone</h2>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <div class="bottom">
+        <button onclick="scrollUp()" id="scroll-up" class="reg-btn"><i class="fas fa-chevron-up"></i></button>
+    </div>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="js/discomoji.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
